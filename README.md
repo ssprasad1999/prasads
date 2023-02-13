@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-Hi how are you
+This is my first repository in git repository.
