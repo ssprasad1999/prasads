@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-This is my first repository in git repository.
+This is my first repository in git repositories.
