@@ -1,0 +1,19 @@
+<h1>Students Listing page</h1>
+
+<table>
+	<thead>
+		<tr>
+			<th>FIRST NAME</th>
+			<th>LAST NAME</th>
+		</tr>
+	</thead>
+
+	<tbody>
+	<% @students.each do |student| %>
+		<tr>
+			<td><%=student.first_name%></td>
+			<td><%=student.last_name%></td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>
