@@ -1,3 +1,8 @@
 {
-	"solargraph.useBundler": true
+	"solargraph.useBundler": true,
+	"solargraph.bundlerPath": "solargraph.bundlerPath",
+	"solargraph.commandPath": "solargraph.commandPath",
+	"workbench.colorCustomizations": {
+			"editorInfo.foreground": "#1f1b1b"
+		}
 }
