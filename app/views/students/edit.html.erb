@@ -1,0 +1,26 @@
+<h1>Edit Student</h1>
+
+<%if @student.errors.any?%>
+	<h2>Errors stopping from saving</h2>
+	<ul>
+		<% @student.errors.full_messages.each do |msg| %>
+			<li><%= msg%></li>
+		<% end %>
+	</ul>
+<%end%>
+
+<%=form_with(model: @student, local: true) do |f|%>
+
+	<p>
+		<%=f.label :first_name%><br/>
+		<%=f.text_field :first_name%>
+	</p>
+	<p>
+		<%=f.label :last_name%><br/>
+		<%=f.text_field :last_name%>
+	</p>
+
+	<%=f.submit%>
+<%end%>
+
+<p><%= link_to 'Go Back', students_path%></p>

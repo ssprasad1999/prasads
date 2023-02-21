@@ -1,3 +1,8 @@
 <h1>Show the Student Details</h1>
 <p><strong>First Name: </strong><%=@student.first_name%></p>
 <p><strong>Last Name: </strong><%=@student.last_name%></p>
+<p>
+<%= link_to 'Go Back', students_path%> |
+<%= link_to 'Edit', edit_student_path(@student)%> |
+<%= link_to 'Delete', student_path(@student), method: :delete, data: {confirm: "Are you sure?"}%>
+</p>
