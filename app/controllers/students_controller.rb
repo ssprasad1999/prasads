@@ -5,10 +5,12 @@ class StudentsController < ApplicationController
 	def show
 		# This action of set_student is performed before show, edit, update, destroy actions
 		# @student=Student.find(params[:id])
+		render json: @student
 	end
 
 	def index
 		@students=Student.all
+		render json: @students
 	end
 
 	def new
